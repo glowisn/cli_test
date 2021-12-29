@@ -9,21 +9,8 @@ class ChartsView extends GetView<ChartsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          children: [
-            Text(
-              'ChartsView is working',
-              style: TextStyle(fontSize: 20),
-            ),
-            ElevatedButton(
-                onPressed: () {
-                  Get.rootDelegate.toNamed(Routes.TEST01);
-                },
-                child: const Text("Test01 Routing"))
-          ],
-        ),
-      ),
+      appBar: AppBar(title: Text("Chart"),),
+      body: GetRouterOutlet(initialRoute: Routes.TEST01,)
     );
   }
 }

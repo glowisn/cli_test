@@ -6,6 +6,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/test01/bindings/test01_binding.dart';
 import '../modules/test01/views/test01_view.dart';
+import '../modules/test02/bindings/test02_binding.dart';
+import '../modules/test02/views/test02_view.dart';
 
 part 'app_routes.dart';
 
@@ -32,6 +34,11 @@ class AppPages {
       name: _Paths.TEST01,
       page: () => Test01View(),
       binding: Test01Binding(),
+    ),
+    GetPage(
+      name: _Paths.TEST02,
+      page: () => Test02View(),
+      binding: Test02Binding(),
     ),
   ];
 }
