@@ -6,9 +6,9 @@ import 'app/routes/app_pages.dart';
 
 void main() {
   runApp(
-    GetMaterialApp(
-      title: "Application",
-      initialRoute: AppPages.INITIAL,
+    GetMaterialApp.router(
+      title: "Cli_test",
+      
       getPages: AppPages.routes,
     ),
   );
