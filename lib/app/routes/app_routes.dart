@@ -5,8 +5,11 @@ abstract class Routes {
   Routes._();
   static const HOME = _Paths.HOME;
   static const CHARTS = _Paths.HOME + _Paths.CHARTS;
-  static const TEST01 = _Paths.TEST01;
-  static const TEST02 = _Paths.TEST02;
+  static const TEST01 = _Paths.HOME + _Paths.CHARTS + _Paths.TEST01;
+  static const TEST02 =
+      _Paths.HOME + _Paths.CHARTS + _Paths.TEST01 + _Paths.TEST02;
+  static const SPL = _Paths.SPL;
+  static const ILV = _Paths.ILV;
 }
 
 abstract class _Paths {
@@ -15,4 +18,6 @@ abstract class _Paths {
   static const CHARTS = '/charts';
   static const TEST01 = '/test01';
   static const TEST02 = '/test02';
+  static const SPL = '/spl';
+  static const ILV = '/ilv';
 }

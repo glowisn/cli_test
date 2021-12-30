@@ -9,8 +9,7 @@ class ChartsView extends GetView<ChartsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Chart"),),
-      body: GetRouterOutlet(initialRoute: Routes.TEST01,)
+      body: GetRouterOutlet(initialRoute: Routes.TEST01)
     );
   }
 }
