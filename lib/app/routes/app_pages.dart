@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import '../modules/charts/bindings/charts_binding.dart';
 import '../modules/charts/views/charts_view.dart';
+import '../modules/detail01/bindings/detail01_binding.dart';
+import '../modules/detail01/views/detail01_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/ilv/bindings/ilv_binding.dart';
@@ -12,6 +14,8 @@ import '../modules/test01/bindings/test01_binding.dart';
 import '../modules/test01/views/test01_view.dart';
 import '../modules/test02/bindings/test02_binding.dart';
 import '../modules/test02/views/test02_view.dart';
+import '../modules/testuri/bindings/testuri_binding.dart';
+import '../modules/testuri/views/testuri_view.dart';
 
 part 'app_routes.dart';
 
@@ -56,5 +60,16 @@ class AppPages {
       page: () => IlvView(),
       binding: IlvBinding(),
     ),
+    GetPage(
+        name: _Paths.TESTURI,
+        page: () => TesturiView(),
+        binding: TesturiBinding(),
+        children: [
+          GetPage(
+            name: _Paths.DETAIL01,
+            page: () => Detail01View(),
+            binding: Detail01Binding(),
+          ),
+        ]),
   ];
 }

@@ -14,9 +14,9 @@ class Test01View extends GetView<Test01Controller> {
         children: [
           ElevatedButton(
               onPressed: () {
-                //
+                Get.rootDelegate.toNamed(Routes.TESTURI);
               },
-              child: Text("Button 02")),
+              child: Text("test URI view")),
           ElevatedButton(
               onPressed: () {
                 Get.rootDelegate.toNamed(Routes.ILV);

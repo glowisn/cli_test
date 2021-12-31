@@ -10,6 +10,8 @@ abstract class Routes {
       _Paths.HOME + _Paths.CHARTS + _Paths.TEST01 + _Paths.TEST02;
   static const SPL = _Paths.SPL;
   static const ILV = _Paths.ILV;
+  static const TESTURI = _Paths.TESTURI;
+  static String DETAIL01(String argument) => '$TESTURI/detail01=$argument';
 }
 
 abstract class _Paths {
@@ -20,4 +22,6 @@ abstract class _Paths {
   static const TEST02 = '/test02';
   static const SPL = '/spl';
   static const ILV = '/ilv';
+  static const TESTURI = '/testuri';
+  static const DETAIL01 = '/detail01=:argument';
 }
