@@ -8,8 +8,6 @@ import '../controllers/charts_controller.dart';
 class ChartsView extends GetView<ChartsController> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: GetRouterOutlet(initialRoute: Routes.TEST01)
-    );
+    return GetRouterOutlet(initialRoute: Routes.TEST01);
   }
 }

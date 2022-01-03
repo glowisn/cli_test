@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/chart2/bindings/chart2_binding.dart';
+import '../modules/chart2/views/chart2_view.dart';
 import '../modules/charts/bindings/charts_binding.dart';
 import '../modules/charts/views/charts_view.dart';
 import '../modules/detail01/bindings/detail01_binding.dart';
@@ -49,12 +51,12 @@ class AppPages {
                       ),
                     ]),
               ]),
+          GetPage(
+            name: _Paths.CHART2,
+            page: () => Chart2View(),
+            binding: Chart2Binding(),
+          ),
         ]),
-    GetPage(
-      name: _Paths.SPL,
-      page: () => SplView(),
-      binding: SplBinding(),
-    ),
     GetPage(
       name: _Paths.ILV,
       page: () => IlvView(),
@@ -71,5 +73,10 @@ class AppPages {
             binding: Detail01Binding(),
           ),
         ]),
+    GetPage(
+      name: _Paths.SPL,
+      page: () => SplView(),
+      binding: SplBinding(),
+    ),
   ];
 }

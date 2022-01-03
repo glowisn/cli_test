@@ -8,6 +8,24 @@ import '../controllers/home_controller.dart';
 class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
-    return GetRouterOutlet(initialRoute: Routes.CHARTS);
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Home Title"),
+          actions: [
+            IconButton(
+                onPressed: () {
+                  //Get.rootDelegate.toNamed(Routes.CHART2);
+                },
+                icon: Icon(Icons.person))
+          ],
+        ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(height: 1800, child: GetRouterOutlet(initialRoute: Routes.CHARTS)),
+              SizedBox(height: 1800, child: GetRouterOutlet(initialRoute: Routes.CHARTS))
+            ],
+          ),
+        ));
   }
 }
