@@ -14,6 +14,7 @@ dependencies:
   collection: ^1.15.0
   scrollable_positioned_list: ^0.2.3
   indexed_list_view: ^2.0.1
+  googleapis: ^7.0.0
 
 dev_dependencies: 
   flutter_lints: ^1.0.0

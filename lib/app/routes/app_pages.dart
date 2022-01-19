@@ -13,6 +13,8 @@ import '../modules/ilv/views/ilv_view.dart';
 import '../modules/spl/bindings/spl_binding.dart';
 import '../modules/spl/views/spl_view.dart';
 import '../modules/test01/bindings/test01_binding.dart';
+import '../modules/test01/bq/bindings/bq_binding.dart';
+import '../modules/test01/bq/views/bq_view.dart';
 import '../modules/test01/views/test01_view.dart';
 import '../modules/test02/bindings/test02_binding.dart';
 import '../modules/test02/views/test02_view.dart';
@@ -77,6 +79,11 @@ class AppPages {
       name: _Paths.SPL,
       page: () => SplView(),
       binding: SplBinding(),
+    ),
+    GetPage(
+      name: _Paths.BQ,
+      page: () => BqView(),
+      binding: BqBinding(),
     ),
   ];
 }
