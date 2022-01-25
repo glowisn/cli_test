@@ -15,6 +15,8 @@ import '../modules/spl/views/spl_view.dart';
 import '../modules/test01/bindings/test01_binding.dart';
 import '../modules/test01/bq/bindings/bq_binding.dart';
 import '../modules/test01/bq/views/bq_view.dart';
+import '../modules/test01/html/bindings/html_binding.dart';
+import '../modules/test01/html/views/html_view.dart';
 import '../modules/test01/views/test01_view.dart';
 import '../modules/test02/bindings/test02_binding.dart';
 import '../modules/test02/views/test02_view.dart';
@@ -51,6 +53,16 @@ class AppPages {
                         page: () => Test02View(),
                         binding: Test02Binding(),
                       ),
+                      GetPage(
+                        name: _Paths.BQ,
+                        page: () => BqView(),
+                        binding: BqBinding(),
+                      ),
+                      GetPage(
+                        name: _Paths.HTML,
+                        page: () => HtmlView(),
+                        binding: HtmlBinding(),
+                      ),
                     ]),
               ]),
           GetPage(
@@ -79,11 +91,6 @@ class AppPages {
       name: _Paths.SPL,
       page: () => SplView(),
       binding: SplBinding(),
-    ),
-    GetPage(
-      name: _Paths.BQ,
-      page: () => BqView(),
-      binding: BqBinding(),
     ),
   ];
 }

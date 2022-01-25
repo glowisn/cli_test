@@ -21,6 +21,11 @@ class Test01View extends GetView<Test01Controller> {
                     Get.rootDelegate.toNamed(Routes.BQ);
                   },
                   child: Text("BQ view")),
+                  ElevatedButton(
+                  onPressed: () {
+                    Get.rootDelegate.toNamed(Routes.HTML);
+                  },
+                  child: Text("HTML view")),
               ElevatedButton(
                   onPressed: () {
                     Get.rootDelegate.toNamed(Routes.ILV);
